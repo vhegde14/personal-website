@@ -51,12 +51,18 @@ body {
 .greeting {
     font-size: 3.8em;
     font-weight: 800;
+    background: linear-gradient(90deg, rgba(4,0,75,1) 0%, rgba(50,0,98,1) 0%, rgba(180,108,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .intro {
     font-size: 3.8em;
     font-weight: 800;
     margin-bottom: 0.2em;
+    background: linear-gradient(90deg, rgba(4,0,75,1) 0%, rgba(50,0,98,1) 0%, rgba(180,108,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .intro-subtext {
@@ -227,7 +233,6 @@ body {
 
 .project-card {
     border: 3px solid black;
-    height: 30em;
     margin: 1em;
     width: 30%;
     border-radius: 12px;

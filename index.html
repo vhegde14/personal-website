@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Varun Hegde's Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,600,800">
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#aboutMe">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#school">School</a>
+        </div>
+        <div class="intro-container">
+            <p class="greeting">Hi there!</p>
+        </div>
+        <div class="intro-container">
+            <p class="intro">I'm Varun!</p>
+            <p class="intro-subtext">I'm an (aspiring) Software Engineer who loves to try and build cool projects</p>
+        </div>
+        <div class="intro-container">
+            <p class="intro">Like this Website!</p>
+            <p class="intro-subtext">So hopefully by the end of this page, you can learn something new about me</p>
+        </div>
+        <div class="about-me-container" id="aboutMe">
+            <div class="about-me-title">
+                <p><strong>Here's a little bit of background info</strong></p>
+            </div>
+            <div class="about-me-content">
+                <div class="about-me-left">
+                    <div class="me-image">
+                        <img src="img/me.jpg" alt="This should be a picture of me">
+                    </div>
+                    <div class="important-links">
+                        <p class="link-description">Here are some links. Feel free to click on them if you want</p>
+                        <a class="link-line" href="resume.pdf">
+                            <img src="img/file-lines.svg"><p class="link-line-label">Resume</p>
+                        </a>
+                        <a class="link-line" href="mailto:varun.hegde@gatech.edu">
+                            <img src="img/envelope.svg"><p class="link-line-label">varun.hegde@gatech.edu</p>
+                        </a>
+                        <a class="link-line" href="https://github.com/vhegde14">
+                            <img src="img/github.svg"><p class="link-line-label">GitHub</p>
+                        </a>
+                        <a class="link-line" href="https://linkedin.com/in/varun-hegde1">
+                            <img src="img/linkedin.svg"><p class="link-line-label">LinkedIn</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-me-text">
+                    <ul class="me-info-list">
+                        <li class="info-item">I was born and raised in the <span style="color: #8126f0;font-weight: 600">Bay Area</span> (Dub Nation 💙💛)</li>
+                        <li class="info-item">
+                            I'm currently a Junior at <span style="color: #8126f0;font-weight: 600">Georgia Tech</span> in Atlanta,
+                            <br> studying <span style="color: #8126f0;font-weight: 600">Computer Science</span>
+                        </li>
+                        <li class="info-item">This summer, I was a <br> <span style="color: #8126f0;font-weight: 600">Software Engineering Intern</span> at <a href="https://eightfold.ai/" style="text-decoration: none">Eightfold.AI</a></li>
+                        <li class="info-item">At Georgia Tech, I'm in <span style="color: #8126f0;font-weight: 600">Web Development Club</span> and have previously been in <span style="color: #8126f0;font-weight: 600">VoterTech</span> and <span style="color: #8126f0;font-weight: 600">iOS Development Club</span></li>
+                        <li class="info-item">My first coding projects were making mods for Minecraft and my own 2D Dungeon Crawler (still my favorite one) when I was in 5th grade</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="work-experience-container" id="experience">
+            <div class="work-experience-title">
+                <p><strong>Some places I've worked at</strong></p>
+            </div>
+            <div class="work-experience-text">
+                <ul class="jobs-list">
+                    <li class="job-entry">
+                        <div class="job-header">
+                            <p class="job-title">Software Engineering Intern @ <span style="color: #8126f0;font-weight: 600">Eightfold.AI</span></p>
+                        </div>
+                        <p class="job-description">
+                            During this past summer, I interned at Eightfold AI, an intelligence platform for
+                            Talent Acquisition and Talent Management. I got the chance to work on some interesting projects using
+                            some exciting technologies, namely with a suite of AWS Products like Lambda, S3, Athena, Redshift, etc.
+                            As part of the App Platform team, I got to contribute to improving the app developer experience, as well as
+                            creating resources to enhance applications built on AWS Lambda functions.
+                        </p>
+                    </li>
+                    <li class="job-entry">
+                        <p class="job-title">Software Engineering Intern @ <span style="color: #8126f0;font-weight: 600">EdCast</span></p>
+                        <p class="job-description">
+                            While interning at EdCast, I got to observe the functions that go into a Learning Experience Platform.
+                            I learned about how Machine Learning backs data for different businesses by researching K-Means Clustering 
+                            algorithms in Python. I also received the Domo Data Specialist certification for Business Intelligence.
+                        </p>
+                    </li>
+                    <li class="job-entry">
+                        <p class="job-title">Intern @ <span style="color: #8126f0;font-weight: 600">Weavr</span></p>
+                        <p class="job-description">
+                            At Weavr, with less than 20 employees at the time, I truly immersed myself in the startup culture. I learned
+                            the basics of SWE team management and how crucial Agile methodology can be in a real and fast-paced environment.
+                            I also got my first taste of enterprise-level code by doing Python code review and testing. In my last few weeks,
+                            I organized a Meetup conference to talk about the usage and applications of AR and VR in the future.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="project-container" id="projects">
+            <div class="project-title">
+                <p><strong>Some stuff I've worked on</strong></p>
+            </div>
+            <div class="project-content">
+                <div class="project-card">
+                    <div class="project-card-title"><p class="title-text">Online Chat Website</p></div>
+                    <div class="project-card-technologies"><p class="tech-text"><strong>Technologies:</strong> ReactJS, Google Firebase</p></div>
+                    <div class="project-card-description">
+                        <p class="description-text">
+                            I found that trying to quickly onboard onto an online chat messenger, like Discord,
+                            was taking too long so I made an online chat messaging website called <strong>VChat</strong>
+                            in order to be able to quickly login and send messages to your friends. This project was
+                            a good experience in learning about authentication, as sending messages on VChat requires 
+                            signing in with some sort of 3rd party account.
+                        </p>
+                        <p class="description-text">
+                            This project is hosted <a href="https://vhegde14.github.io/vchat/">here</a> if you want to check it out 
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-title"><p class="title-text">Tower Defense</p></div>
+                    <div class="project-card-technologies"><p class="tech-text"><strong>Technologies:</strong> Java, FXML</p></div>
+                    <div class="project-card-description">
+                        <p class="description-text">
+                            As part of our Software Engineering Principles class, our team created a full scale Desktop
+                            Tower Defense game. Over the course of the semester, we used JavaFX to render our OOP design
+                            and FXML to create the user interfaces for the player. We also learned and followed Agile principles
+                            for a more efficient workflow and to create scalable technology.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-title"><p class="title-text">WhatToWatch?</p></div>
+                    <div class="project-card-technologies"><p class="tech-text"><strong>Technologies:</strong> ReactJS, Node.js</p></div>
+                    <div class="project-card-description">
+                        <p class="description-text">
+                            This project was my first deep dive into REST APIs. As an avid fan of watching TV and movies, I got 
+                            really tired of scrolling through every streaming platform trying to find what I wanted to watch. I
+                            used the Watchmode dataset in order to find streaming provider information about shows and movies
+                            that you can search for. It can save you a lot of time on your next movie night!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="school-container" id="school">
+            <div class="school-title">
+                <p><strong>Some classes I've taken</strong></p>
+            </div>
+            <div class="class-subject-content">
+                <ul class="class-subject-list">
+                    <li class="class-subject-title">
+                        <label for="compsci">Computer Science</label>
+                        <input id="compsci" type="checkbox">
+                        <div class="subclass-subject-content">
+                            <ul class="subclass-subject-list">
+                                <li class="subclass-subject-item">Intro to Object Oriented Programming</li>
+                                <li class="subclass-subject-item">Data Structures and Algorithms</li>
+                                <li class="subclass-subject-item">Artificial Intelligence</li>
+                                <li class="subclass-subject-item">Computer Organization and Programs</li>
+                                <li class="subclass-subject-item">Software Engineering Principles</li>
+                                <li class="subclass-subject-item">Systems and Networks</li>
+                                <li class="subclass-subject-item">Databases</li>
+                                <li class="subclass-subject-item">Computer Networking</li>
+                                <li class="subclass-subject-item">Computer Law</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="class-subject-title">
+                        <label for="math">Math</label>
+                        <input id="math" type="checkbox">
+                        <div class="subclass-subject-content">
+                            <ul class="subclass-subject-list">
+                                <li class="subclass-subject-item">Differential and Integral Calculus (High School)</li>
+                                <li class="subclass-subject-item">Linear Algebra</li>
+                                <li class="subclass-subject-item">Discrete Math</li>
+                                <li class="subclass-subject-item">Multivariable Calculus (High School and College)</li>
+                                <li class="subclass-subject-item">Advanced Algorithms</li>
+                                <li class="subclass-subject-item">Statistics and Probability</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="class-subject-title">
+                        <label for="hum">Other relevant classes</label>
+                        <input id="hum" type="checkbox">
+                        <div class="subclass-subject-content">
+                            <ul class="subclass-subject-list">
+                                <li class="subclass-subject-item">Physics 1: Mechanics</li>
+                                <li class="subclass-subject-item">Entrepreneurial Perspectives</li>
+                                <li class="subclass-subject-item">Computer Ethics</li>
+                                <li class="subclass-subject-item">Physics 2: Electricity & Magnetism</li>
+                                <li class="subclass-subject-item">English 1 and 2</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="class-subject-title">
+                        <label for="misc">Some random (but fun) stuff</label>
+                        <input id="misc" type="checkbox">
+                        <div class="subclass-subject-content">
+                            <ul class="subclass-subject-list">
+                                <li class="subclass-subject-item">Microeconomics</li>
+                                <li class="subclass-subject-item">Psychology</li>
+                                <li class="subclass-subject-item">Earth Science</li>
+                                <li class="subclass-subject-item">Art History</li>
+                                <li class="subclass-subject-item">French</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="top-button">
+                    <a href="#">Back to top</a>
+                </div>
+                <p class="footer-line-top">This website was made entirely with HTML and CSS.</p>
+                <p class="footer-line">If you're curious, you can dive into its insides yourself <a href="">here</a></p>
+                <div class="github-line">
+                    <img src="img/github.svg" class="footer-github-logo">
+                    <p>A Varun Hegde Project</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

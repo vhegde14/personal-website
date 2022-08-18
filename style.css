@@ -232,10 +232,22 @@ body {
 }
 
 .project-card {
-    border: 3px solid black;
+    border: 3px solid;
+    box-shadow: 
+        10px -10px 0 -3px #b38ee1,
+        10px -10px
+    ;
     margin: 1em;
     width: 30%;
-    border-radius: 12px;
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.project-card:hover {
+    transform: translate(10px, -10px);
+    box-shadow: 
+        0 0 0 -3px #b38ee1,
+        0 0
+    ;
 }
 
 .project-card-title {
@@ -308,16 +320,26 @@ body {
     display: table;
 }
 
+#compsci-label:hover {
+    color: #5c11b8;
+    cursor: pointer;
+}
+
 .subclass-subject-content {
     display: none;
     font-size: 0.8em;
-
+    color: black;
 }
 #compsci:checked + .subclass-subject-content {
     display: block;
 }
 #compsci {
     display: none;
+}
+
+#math-label:hover {
+    color: #5c11b8;
+    cursor: pointer;
 }
 
 #math:checked + .subclass-subject-content {
@@ -327,6 +349,10 @@ body {
     display: none;
 }
 
+#hum-label:hover {
+    color: #5c11b8;
+    cursor: pointer;
+}
 #hum:checked + .subclass-subject-content {
     display: block;
 }
@@ -334,6 +360,10 @@ body {
     display: none;
 }
 
+#misc-label:hover {
+    color: #5c11b8;
+    cursor: pointer;
+}
 #misc:checked + .subclass-subject-content {
     display: block;
 }

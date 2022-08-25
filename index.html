@@ -5,6 +5,7 @@
         <title>Varun Hegde's Website</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,600,800">
+        <link rel="icon" type="image/png" href="/path/image.png"/>
     </head>
     <body>
         <div class="navbar">
@@ -13,16 +14,31 @@
             <a href="#projects">Projects</a>
             <a href="#school">School</a>
         </div>
-        <div class="intro-container">
+        <div class="intro-container" id="first-intro">
             <p class="greeting">Hi there!</p>
+            <div class="angle-down">
+                <a href="#second-intro">
+                    <img src="img/angle-down.svg">
+                </a>
+            </div>
         </div>
-        <div class="intro-container">
+        <div class="intro-container" id="second-intro">
             <p class="intro">I'm Varun!</p>
             <p class="intro-subtext">I'm an (aspiring) Software Engineer who loves to try and build cool projects</p>
+            <div class="angle-down">
+                <a href="#third-intro">
+                    <img src="img/angle-down.svg">
+                </a>
+            </div>
         </div>
-        <div class="intro-container">
+        <div class="intro-container" id="third-intro">
             <p class="intro">Like this Website!</p>
             <p class="intro-subtext">So hopefully by the end of this page, you can learn something new about me</p>
+            <div class="angle-down">
+                <a href="#aboutMe">
+                    <img src="img/angle-down.svg">
+                </a>
+            </div>
         </div>
         <div class="about-me-container" id="aboutMe">
             <div class="about-me-title">
@@ -70,19 +86,19 @@
             <div class="work-experience-text">
                 <ul class="jobs-list">
                     <li class="job-entry">
-                        <div class="job-header">
-                            <p class="job-title">Software Engineering Intern @ <span style="color: #8126f0;font-weight: 600">Eightfold.AI</span></p>
-                        </div>
+                        <p class="job-title">Software Engineering Intern @ <span style="color: #8126f0;font-weight: 600">Eightfold.AI</span></p>
+                        <p class="job-dates">// May to August 2022</p>
                         <p class="job-description">
                             During this past summer, I interned at Eightfold AI, an intelligence platform for
                             Talent Acquisition and Talent Management. I got the chance to work on some interesting projects using
-                            some exciting technologies, namely with a suite of AWS Products like Lambda, S3, Athena, Redshift, etc.
-                            As part of the App Platform team, I got to contribute to improving the app developer experience, as well as
-                            creating resources to enhance applications built on AWS Lambda functions.
+                            really exciting technologies, namely with a suite of AWS Products like Lambda, S3, CloudWatch, Athena, Redshift, etc.
+                            as well as Python and React. As part of the App Platform team, I got to contribute to improving the app developer 
+                            experience, as well as creating resources to enhance applications built on AWS Lambda functions.
                         </p>
                     </li>
                     <li class="job-entry">
                         <p class="job-title">Software Engineering Intern @ <span style="color: #8126f0;font-weight: 600">EdCast</span></p>
+                        <p class="job-dates">// June to August 2021</p>
                         <p class="job-description">
                             While interning at EdCast, I got to observe the functions that go into a Learning Experience Platform.
                             I learned about how Machine Learning backs data for different businesses by researching K-Means Clustering 
@@ -91,6 +107,7 @@
                     </li>
                     <li class="job-entry">
                         <p class="job-title">Intern @ <span style="color: #8126f0;font-weight: 600">Weavr</span></p>
+                        <p class="job-dates">// June to August 2019</p>
                         <p class="job-description">
                             At Weavr, with less than 20 employees at the time, I truly immersed myself in the startup culture. I learned
                             the basics of SWE team management and how crucial Agile methodology can be in a real and fast-paced environment.
@@ -103,12 +120,15 @@
         </div>
         <div class="project-container" id="projects">
             <div class="project-title">
-                <p><strong>Some stuff I've worked on</strong></p>
+                <p class="project-title-style"><strong>Some stuff I've worked on</strong></p>
+                <div class="project-subheader">
+                    <p>You can find all these projects and more <a href="https://github.com/vhegde14">here</a></p>
+                </div>
             </div>
             <div class="project-content">
                 <div class="project-card">
                     <div class="project-card-title"><p class="title-text">Online Chat Website</p></div>
-                    <div class="project-card-technologies"><p class="tech-text"><strong>Technologies:</strong> ReactJS, Google Firebase</p></div>
+                    <div class="project-card-technologies"><p class="tech-text"><strong style="color: #5c279d;">Technologies:</strong> ReactJS, Google Firebase</p></div>
                     <div class="project-card-description">
                         <p class="description-text">
                             I found that trying to quickly onboard onto an online chat messenger, like Discord,
@@ -124,7 +144,7 @@
                 </div>
                 <div class="project-card">
                     <div class="project-card-title"><p class="title-text">Tower Defense</p></div>
-                    <div class="project-card-technologies"><p class="tech-text"><strong>Technologies:</strong> Java, FXML</p></div>
+                    <div class="project-card-technologies"><p class="tech-text"><strong style="color: #5c279d;">Technologies:</strong> Java, FXML</p></div>
                     <div class="project-card-description">
                         <p class="description-text">
                             As part of our Software Engineering Principles class, our team created a full scale Desktop
@@ -136,13 +156,53 @@
                 </div>
                 <div class="project-card">
                     <div class="project-card-title"><p class="title-text">WhatToWatch?</p></div>
-                    <div class="project-card-technologies"><p class="tech-text"><strong>Technologies:</strong> ReactJS, Node.js</p></div>
+                    <div class="project-card-technologies"><p class="tech-text"><strong style="color: #5c279d;">Technologies:</strong> ReactJS, Node.js</p></div>
                     <div class="project-card-description">
                         <p class="description-text">
                             This project was my first deep dive into REST APIs. As an avid fan of watching TV and movies, I got 
-                            really tired of scrolling through every streaming platform trying to find what I wanted to watch. I
-                            used the Watchmode dataset in order to find streaming provider information about shows and movies
+                            really tired of scrolling through every streaming platform trying to find what I wanted to watch, so
+                            I made a tool where you can enter the name of any movie or show and find what platforms you can watch it 
+                            on. I used the Watchmode dataset in order to find streaming provider information about shows and movies
                             that you can search for. It can save you a lot of time on your next movie night!
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-title"><p class="title-text">Decentralized Exchange</p></div>
+                    <div class="project-card-technologies"><p class="tech-text"><strong style="color: #5c279d;">Technologies:</strong> ReactJS</p></div>
+                    <div class="project-card-description">
+                        <p class="description-text">
+                            I've spent the last couple years learning about Cryptocurrency and through the WebDev Club at Georgia Tech, we were 
+                            able to create a Decentralized Exchange (or "Dex") Swap. Essentially, using platforms like Moralis and 1-inch, 
+                            our Dex allows you to swap any existing crypto that you have in your wallet for any other coin on the Ethereum blockchain 
+                            (with minimal gas fees!). I learned how to implement important features for
+                            a user-facing platform in this project, like login authentication, transaction verification, etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-title"><p class="title-text">GBA Dungeon Crawler</p></div>
+                    <div class="project-card-technologies"><p class="tech-text"><strong style="color: #5c279d;">Technologies:</strong> C</p></div>
+                    <div class="project-card-description">
+                        <p class="description-text">
+                            As part of a Computer Organization and Programming class, I built a GBA-style dungeon crawler game that was
+                            emulated on a GPA device platform. I used DMA (direct memory access) and VBlank in order to directly draw images onto pixels on the 
+                            screen. I had to create rendering methods for images, strings, and shapes, as well as the game logic for randomly placing
+                            items on the dungeon floor, moving the character around, collision detection, and win/loss situations, all in C. While the
+                            Pokémon game logic is a little more complicated, this game has a pretty cool retro vibe!
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-title"><p class="title-text">COVID-19 Data Visualizer</p></div>
+                    <div class="project-card-technologies"><p class="tech-text"><strong style="color: #5c279d;">Technologies:</strong> ReactJS, Python Flask</p></div>
+                    <div class="project-card-description">
+                        <p class="description-text">
+                            Also through GT WebDev, I worked on creating a Data Viz tool that used real-time, accurate 
+                            Georgia Tech Health Data on the Covid-19 virus around campus. This data includes information like
+                            recent locations, student/employee type, quarantine location, as well as aggregated case numbers for different
+                            campus groups. We used the Recharts library to display the data in more readable formats, while using Python Flask
+                            to scrape the data off the GT Health website and aggregate case data to use for our backend information.
                         </p>
                     </div>
                 </div>
@@ -224,7 +284,9 @@
                     <a href="https://github.com/vhegde14/personal-website">here</a>
                 </p>
                 <div class="github-line">
-                    <img src="img/github.svg" class="footer-github-logo">
+                    <a href="https://github.com/vhegde14">
+                        <img src="img/github.svg" class="footer-github-logo">
+                    </a>
                     <p>A Varun Hegde Project</p>
                 </div>
             </div>

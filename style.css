@@ -7,6 +7,7 @@ White (bground): #ECECEC
 
 html {
     scroll-behavior: smooth;
+    background: #ECECEC;
 }
 
 .navbar {
@@ -37,6 +38,17 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     margin: 0px;
+}
+
+.angle-down {
+    width: 3em;
+    transition: 0.4s;
+}
+
+.angle-down:hover {
+    transform: translateY(-0.2em);
+    opacity: .6;
+    transition: 0.4s;
 }
 
 .intro-container {
@@ -71,6 +83,7 @@ body {
 
 .about-me-container {
     width: 100%;
+    margin-top: 4em;
     margin-bottom: 4em;
 }
 
@@ -79,7 +92,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-top: 0.25em;
+    padding-top: 1em;
     font-size: 2.8em;
     height: 20%;    
 }
@@ -197,6 +210,11 @@ body {
     margin: 0;
 }
 
+.job-dates {
+    font-size: 0.75em;
+    margin: 0;
+}
+
 .header-line {
     margin: 0;
     padding-top: 0.2em;
@@ -215,14 +233,27 @@ body {
 .project-container {
 }
 
+
 .project-title {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     position: relative;
     padding-top: 0.6em;
     font-size: 2.8em;
     height: 20%;    
+}
+
+.project-subheader {
+    text-align: center;
+    font-size: 0.4em;
+    margin: 1.45em;
+    margin-top: 0;
+}
+
+.project-title .project-title-style {
+    margin-bottom: 0;
 }
 
 .project-content {
@@ -256,16 +287,19 @@ body {
     align-items: center;
     font-size: 1.8em;
     font-weight: 600;
+    padding: 0.2em;
 }
 
 .project-card-title .title-text {
     margin-top: 0.5em;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .project-card-technologies {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .project-card-technologies .tech-text {
